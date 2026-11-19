@@ -27,10 +27,11 @@ It works in Korean or English, so the same report is usable by a U.S. regulatory
 | Layer | Stack |
 | --- | --- |
 | Orchestration | n8n |
-| Models | Claude and OpenAI |
-| Front end | Next.js on Vercel |
+| Model | OpenAI, run through an n8n AI workflow with six custom rule tools (drug-claim trigger phrases, prohibited and restricted ingredients with CFR citations, Korean-to-INCI ingredient translation, MoCRA label requirements, report builder, consultant referral) |
+| Front end | built in Lovable, connected to the n8n workflow through a webhook |
+| Data lookups | FDA import refusal records for Korean manufacturers (Airtable) and a market precedent sheet (Google Sheets) |
 
-The models were the easy part. Getting the FDA rules right was the work.
+The model was the easy part. Getting the FDA rules right was the work.
 
 ## Status
 
@@ -38,4 +39,4 @@ Portfolio project. Validated against three real products. No users, not commerci
 
 ## Repo contents
 
-Being added. The n8n workflow export and the Next.js front end land here next.
+The n8n workflow export and a screenshot of the workflow are being added after the current round of ingredient-check fixes.
